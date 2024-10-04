@@ -19,14 +19,13 @@
             <form onsubmit="event.preventDefault(); convertToFahrenheit();"> <!-- Form untuk input suhu Celsius -->
                 <label for="celsius">Celsius (&deg;C):</label>
                 <textarea id="celsius" name="celsius" rows="3" required></textarea> <!-- Input suhu Celsius -->
-
                 <button type="submit">Konversi</button> <!-- Tombol untuk mengonversi Celsius ke Fahrenheit -->
                 <button type="button" onclick="resetFields()">Reset</button> <!-- Tombol untuk mereset input -->
                 <button type="button" onclick="reverseConversion()">Reverse</button> <!-- Tombol untuk konversi balik dari Fahrenheit ke Celsius -->
             </form>
             
             <div>
-                <label for="fahrenheit-result">Fahrenheit (&deg;F):</label>
+                <label for="fahrenheit-result" id="fahrenheit-result">Fahrenheit (&deg;F):</label>
                 <textarea id="fahrenheit" name="fahrenheit" rows="3" readonly></textarea> <!-- Output hasil suhu Fahrenheit -->
             </div>
             <div>
@@ -39,19 +38,19 @@
             <div class="info-content">
                 <h3>Cara Konversi dari Celsius ke Fahrenheit</h3> <!-- Judul untuk informasi konversi -->
                 <p>
-                    Suhu <span>S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span>S</span> dalam derajat Celsius (&deg;C) dikali 9/5, lalu ditambahkan 32.
+                    Suhu <span class="S-italic-bold">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span class="S-italic-bold">S</span> dalam derajat Celsius (&deg;C) dikali 9/5, lalu ditambahkan 32.
                 </p>
                 <p>
                     Rumusnya adalah:
                 </p>
                 <p>
-                    S(&deg;F) = (S(&deg;C) × 9/5) + 32 <!-- Rumus konversi Fahrenheit ke Celsius -->
+                    <span class="S-italic-bold">S</span>(&deg;F) = (<span class="S-italic-bold">S</span>(&deg;C) × 9/5) + 32 <!-- Rumus konversi Fahrenheit ke Celsius -->
                 </p>
                 <p>
                     atau
                 </p>
                 <p>
-                    S(&deg;F) = (S(&deg;C) × 1.8) + 32 <!-- Alternatif rumus konversi -->
+                    <span class="S-italic-bold">S</span>(&deg;F) = (<span class="S-italic-bold">S</span>(&deg;C) × 1.8) + 32 <!-- Alternatif rumus konversi -->
                 </p>
             </div>
         </section>

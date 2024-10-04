@@ -1,6 +1,6 @@
 /* Mengatur dasar untuk seluruh halaman */
 body {
-    font-family: Arial, sans-serif; /* Menggunakan font Arial untuk teks */
+    font-family: 'Roboto', Arial, sans-serif; /* Menggunakan font Roboto */
     background-color: #f4f4f4; /* Warna latar belakang yang lembut */
     color: #333; /* Warna teks */
     margin: 0; /* Menghapus margin default */
@@ -68,6 +68,10 @@ button:hover {
     padding: 15px; /* Padding untuk konten info */
     border-radius: 4px; /* Sudut melengkung */
     margin-top: 20px; /* Margin atas untuk jarak */
+}
+.S-italic-bold{
+    font-size: 20px;
+    font-style: italic;
 }
 
 /* Mengatur footer */
