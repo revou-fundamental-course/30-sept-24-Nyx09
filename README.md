@@ -16,3 +16,6 @@ Kalkulator ini memungkinkan pengguna untuk mengonversi suhu antara derajat Celsi
 2. **Klik "Konversi"**: Untuk mengonversi suhu Celsius ke Fahrenheit.
 3. **Klik "Reverse"**: Untuk mengonversi suhu Fahrenheit kembali ke Celsius.
 4. **Klik "Reset"**: Untuk menghapus semua input dan output.
+
+## Github pages 
+**https://revou-fundamental-course.github.io/30-sept-24-Nyx09/**
