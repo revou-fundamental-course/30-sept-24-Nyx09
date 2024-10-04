@@ -4,24 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/index.css"> <!-- Link ke file CSS untuk styling -->
 </head>
 <body>
-    <div class="calculator-container">
-        <div class="calculator-title">
-            <h1> Calculator Temperature </h1>
-        </div>
-        <div class="calculator-subtitle"> <h2>
-            Masukkan suhu dalam derajat Celsius (°C) ke dalam form input ini, lalu klik tombol konversi untuk mendapatkan hasilnya dalam bentuk Fahrenheit (°F).
-        </h2>
-        </div>
-        <label for="celsius">Masukkan suhu dalam Celsius:</label>
-    <input type="number" id="celsius" name="celsius">
-    
-    <button onclick="convertToFahrenheit()">Konversi</button>
-    
-    <p id="result"></p>
+    <header class="Calculator-header">Calculator</header> <!-- Judul halaman -->
 
-    </div>
+    <main>
+        <article>
+            <div class="calculator-subtitle"> 
+                <h2>
+                    Masukkan suhu dalam derajat Celsius (&deg;C) ke dalam form input ini, lalu klik tombol konversi untuk mendapatkan hasilnya dalam bentuk Fahrenheit (&deg;F).
+                </h2>
+            </div>
+            <form onsubmit="event.preventDefault(); convertToFahrenheit();"> <!-- Form untuk input suhu Celsius -->
+                <label for="celsius">Celsius (&deg;C):</label>
+                <textarea id="celsius" name="celsius" rows="3" required></textarea> <!-- Input suhu Celsius -->
+
+                <button type="submit">Konversi</button> <!-- Tombol untuk mengonversi Celsius ke Fahrenheit -->
+                <button type="button" onclick="resetFields()">Reset</button> <!-- Tombol untuk mereset input -->
+                <button type="button" onclick="reverseConversion()">Reverse</button> <!-- Tombol untuk konversi balik dari Fahrenheit ke Celsius -->
+            </form>
+            
+            <div>
+                <label for="fahrenheit-result">Fahrenheit (&deg;F):</label>
+                <textarea id="fahrenheit" name="fahrenheit" rows="3" readonly></textarea> <!-- Output hasil suhu Fahrenheit -->
+            </div>
+            <div>
+                <label for="temperature-how-to-convert">Cara perhitungan suhu:</label>
+                <textarea id="temperature-how-to-convert" name="result" rows="3" readonly></textarea> <!-- Output penjelasan cara konversi -->
+            </div>
+        </article>
+
+        <section>
+            <div class="info-content">
+                <h3>Cara Konversi dari Celsius ke Fahrenheit</h3> <!-- Judul untuk informasi konversi -->
+                <p>
+                    Suhu <span>S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span>S</span> dalam derajat Celsius (&deg;C) dikali 9/5, lalu ditambahkan 32.
+                </p>
+                <p>
+                    Rumusnya adalah:
+                </p>
+                <p>
+                    S(&deg;F) = (S(&deg;C) × 9/5) + 32 <!-- Rumus konversi Fahrenheit ke Celsius -->
+                </p>
+                <p>
+                    atau
+                </p>
+                <p>
+                    S(&deg;F) = (S(&deg;C) × 1.8) + 32 <!-- Alternatif rumus konversi -->
+                </p>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="footer" role="contentinfo">
+        Made by Nelvin 
+    </footer>
+
+    <script src="./script/index.js"></script> <!-- Link ke file JavaScript untuk fungsionalitas -->
 </body>
 </html>
