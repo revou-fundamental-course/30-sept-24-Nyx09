@@ -38,7 +38,8 @@ label {
 
 /* Mengatur textarea */
 textarea {
-    width: 100%; /* Lebar penuh */
+
+    width: 97%; /* Lebar 97% */
     padding: 10px; /* Padding untuk textarea */
     margin: 10px 0; /* Margin atas dan bawah */
     border: 1px solid #ccc; /* Border abu-abu */
@@ -70,8 +71,8 @@ button:hover {
     margin-top: 20px; /* Margin atas untuk jarak */
 }
 .S-italic-bold{
-    font-size: 20px;
-    font-style: italic;
+    font-size: 20px; /* tambah ukuran font */
+    font-style: italic; /* ubah style font */
 }
 
 /* Mengatur footer */
